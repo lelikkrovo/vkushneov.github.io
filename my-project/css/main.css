@@ -1,0 +1,275 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.42;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  background: #5973b1;
+  color: white;
+  margin-bottom: 13px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+  position: relative;
+}
+
+.header__container {
+  height: 77px;
+}
+ 
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.contacts {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: right;
+}
+
+.contacts__phone {
+  color: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contacts__workhours {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.menu__list {
+  margin: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1100px;
+}
+
+/* .sidebar, .content  {
+  display: inline-block;
+  vertical-align: top;
+} */
+
+
+.sidebar {
+  width: 230px;
+}
+
+.airplane__cover-pic {
+  display: block;
+}
+
+.latestnews__avatar-frame {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.menu__link {
+  color: #5972b1;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.4px;
+}
+
+.menu__link:hover {
+  color: black;
+}
+
+.menu__link:before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  width: 23px;
+  height: 18px;
+  background: left center / contain no-repeat;
+}
+
+.menu__item--active .menu__link {
+  color: black;
+}
+
+.menu__item--icon--main .menu__link:before {
+  background-image: url('./img/icons/menu/main.png');
+}
+
+.menu__item--icon--main .menu__link:hover:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.menu__item--icon--feed .menu__link:before {
+  background-image: url('./img/icons/menu/feed.png');
+}
+
+.menu__item--icon--feed .menu__link:hover:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu__item--icon--team .menu__link:before {
+  background-image: url('./img/icons/menu/team.png');
+}
+
+.menu__item--icon--team .menu__link:hover:before {
+  background-image: url('./img/icons/menu/team-hover.png');
+}
+
+.menu__item--active.menu__item--icon--main .menu__link:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.menu__item--active.menu__item--icon--feed .menu__link:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu__item--active.menu__item--icon--team .menu__link:before {
+  background-image: url('./img/icons/menu/team-hover.png');
+}
+
+
+/* Шрифты */
+.title {
+  font-size: 49px;
+}
+
+.tariffs__title {
+  font-size: 11px;
+  text-transform: uppercase;
+  
+}
+
+.tariffs__cost {
+  font-size: 54px;
+}
+
+
+
+/* Тарифы */
+
+.tariffs__item {
+  display: inline-block;
+  text-align: center;
+  width: 185px;
+  height: 365px;
+} 
+
+.tariffs__avatar {
+  display: block;
+  display: inline-block;
+  position: relative;
+  width: 68px;
+  height: 68px;
+}
+
+.tariffs__avatar-mini {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* бордер в тарифы */
+.tariffs__item-border {
+  border: 2px solid #e8e8ec;
+  width: 250px;
+  height: 450px;
+  padding-top: 40px;
+}
+
+.latestnews__avatar, .latestnews__content{
+  display: inline-block;
+}
+
+.latestnews__content {
+  text-align: left;
+  width: 644px;
+  height: 164px;
+}
+
+
+
+.tariffs__content-ul {
+  list-style-type: circle ;
+}
+
+/* pagination */
+
+.pagination {
+  /* display: inline; */
+  margin: 0 auto;
+}
+
+.pagination__item, .pagination__display, .pagination__controlls, .pagination__list, .pagination__link, .pagination__lef, .pagination__right  {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+/* footer */
+
+.footer {
+  background: #5973b1;
+  color: white;
+}
+
+.copyright, .logo-footer, .socials{
+  display: inline-block;
+  width: 33%;
+}
+
+
+/* Иконка в иконке соц. сеть */
+.socials__item {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.socials__avatar-img {
+  position: absolute;
+  width: 13px;
+  height: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* ховер течт */
