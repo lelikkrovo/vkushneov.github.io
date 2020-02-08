@@ -39,6 +39,7 @@ img {
 .header__container {
   height: 77px;
 }
+
  
 
 .logo {
@@ -76,10 +77,10 @@ img {
   min-width: 1100px;
 }
 
-/* .sidebar, .content  {
+.sidebar, .content  {
   display: inline-block;
   vertical-align: top;
-} */
+}
 
 
 .sidebar {
@@ -95,6 +96,11 @@ img {
   height: 160px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+/* менюшка. отступ */
+.menu__item {
+  padding-top: 15px;
 }
 
 .menu__link {
@@ -117,6 +123,8 @@ img {
   height: 18px;
   background: left center / contain no-repeat;
 }
+
+
 
 .menu__item--active .menu__link {
   color: black;
@@ -175,6 +183,13 @@ img {
 }
 
 
+.latestnews__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
 
 /* Тарифы */
 
@@ -210,9 +225,27 @@ img {
   padding-top: 40px;
 }
 
+/* отступ текста от картинки */
+.latestnews__content {
+  padding-left: 10px;
+}
+
 .latestnews__avatar, .latestnews__content{
   display: inline-block;
 }
+
+.latestnews__item {
+  border: 1px solid #f9f9f9;
+  border:none 
+}
+
+hr {
+  border: none;
+  background-color: #f4f4f4; 
+  height: 1px;
+ }
+
+ 
 
 .latestnews__content {
   text-align: left;
@@ -220,23 +253,99 @@ img {
   height: 164px;
 }
 
-
-
+/* стилизация маркировка */
 .tariffs__content-ul {
-  list-style-type: circle ;
+  text-align: left;
+  list-style: disc; 
 }
+
+
+
+/* Стилизация доллара */
+.tariffs__cost {
+  display: inline;
+}
+
+.tariffs__cost-mod {
+  font-size: 30px;
+}
+
 
 /* pagination */
-
 .pagination {
-  /* display: inline; */
-  margin: 0 auto;
+  text-align: center;
+  margin: 29px
 }
 
-.pagination__item, .pagination__display, .pagination__controlls, .pagination__list, .pagination__link, .pagination__lef, .pagination__right  {
+
+.pagination__item, .pagination__display, .pagination__controlls, .pagination__list, .pagination__link, .pagination__left, .pagination__right  {
   display: inline-block;
-  margin: 0 auto;
+  text-decoration: none;
 }
+  
+  .pagination__title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color: #7c7b7b;
+      margin-right: 18px;
+  }
+  
+  .pagination__btn {
+      display: inline-block;
+      text-decoration: none;
+      vertical-align: middle;
+      color: #221f1f;
+  }
+  
+  .pagination__btn_prev {
+      margin-right: 9px;
+  }
+  
+  .pagination__btn_next {
+      margin-left: 9px;
+  }
+  
+  .pagination__btn_active {
+      color: #bebdbd;
+  }
+  
+  .pagination__list {
+      display: inline-block;
+      vertical-align: middle;
+  }
+  
+  .pagination__item {
+      display: inline-block;
+      vertical-align: middle;
+  }
+  
+  .pagination__link {
+      text-decoration: none;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      color: #221f1f;
+      transition: .3s;
+  }
+  
+  .pagination__link:hover {
+      color: #ffffff;
+      background-color: #5972b1;
+      border-radius: 3px;
+  }
+  
+  .pagination__item_active .pagination__link {
+      color: #ffffff;
+      background-color: #5972b1;
+      border-radius: 3px;
+  }
+
+
+
 
 
 /* footer */
@@ -244,13 +353,24 @@ img {
 .footer {
   background: #5973b1;
   color: white;
+  padding: 10px 0;
 }
 
-.copyright, .logo-footer, .socials{
+/* выравнивание элементов футера */
+.footer__col_first, .footer__col_mid, .footer__col_last, .logo-footer{
   display: inline-block;
   width: 33%;
 }
 
+
+
+.footer__col_last {
+  padding: 0px 0px 0px 170px;
+}
+
+.footer__col_mid {
+  text-align: center;
+}
 
 /* Иконка в иконке соц. сеть */
 .socials__item {
@@ -262,8 +382,6 @@ img {
 
 .socials__avatar-img {
   position: absolute;
-  width: 13px;
-  height: 9px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -271,7 +389,62 @@ img {
 
 
 
+.tariffs__content-ul-mod {
+  list-style: disc;
+}
 
-/* ховер течт */
+.tariffs__item {
+  padding-left: 25px;
+}
 
 
+/* тест иконок соцсетей*/
+/* .socials__link:before {
+  content: "";
+  display: inline-block;
+  margin-right: 13px;
+  width: 23px;
+  height: 18px;
+  background: left center / contain no-repeat;
+}
+
+
+.menu__item--active .socials__link {
+  color: black;
+}
+
+.socials__item--icon--vkontakte .socials__link:before {
+  background-image: url('./img/icons/social/vk.png');
+}
+
+.socials__item--icon--vkontakte .socials__link:hover:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.socials__item--icon--facebook .socials__link:before {
+  background-image: url('./img/icons/menu/feed.png');
+}
+
+.socials__item--icon--facebook .socials__link:hover:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.socials__item--icon--twitter .socials__link:before {
+  background-image: url('./img/icons/menu/team.png');
+}
+
+.socials__item--icon--vkontakte .socials__link:hover:before {
+  background-image: url('./img/icons/menu/team-hover.png');
+}
+
+.menu__item--active.menu__item--icon--main .socials__link:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.menu__item--active.menu__item--icon--feed .socials__link:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu__item--active.menu__item--icon--team .socials__link:before {
+  background-image: url('./img/icons/menu/team-hover.png');
+} */
