@@ -84,7 +84,7 @@ img {
 
 
 .sidebar {
-  width: 230px;
+  width: 220px;
 }
 
 .airplane__cover-pic {
@@ -100,7 +100,7 @@ img {
 
 /* менюшка. отступ */
 .menu__item {
-  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .menu__link {
@@ -189,16 +189,25 @@ img {
   font-weight: 700;
 }
 
+.title__margin {
+  margin-bottom: 70px;
+}
 
 
-/* Тарифы */
+.tariffs__item:hover {
+  border: 1px solid #e8e8ec;
+  /* height: 460px;
+  width: 250px; */
+}
 
 .tariffs__item {
   display: inline-block;
   text-align: center;
-  width: 185px;
-  height: 365px;
-} 
+}  
+
+
+
+/* Тарифы */
 
 .tariffs__avatar {
   display: block;
@@ -206,6 +215,8 @@ img {
   position: relative;
   width: 68px;
   height: 68px;
+  background: #5972b1;
+  border-radius: 50%;
 }
 
 .tariffs__avatar-mini {
@@ -217,13 +228,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-/* бордер в тарифы */
-.tariffs__item-border {
-  border: 2px solid #e8e8ec;
-  width: 250px;
-  height: 450px;
-  padding-top: 40px;
-}
+
 
 /* отступ текста от картинки */
 .latestnews__content {
@@ -237,28 +242,43 @@ img {
 .latestnews__item {
   border: 1px solid #f9f9f9;
   border:none 
+  
 }
 
-hr {
-  border: none;
-  background-color: #f4f4f4; 
-  height: 1px;
- }
+/* отступы междуновостями */
+.latestnews__content {
+  margin-bottom: 30px;
+}
 
- 
+/* последнии новости border */
+
+.latestnews__item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.latestnews__item:last-child {
+  border:none;
+}
+
+
 
 .latestnews__content {
-  text-align: left;
   width: 644px;
   height: 164px;
 }
 
 /* стилизация маркировка */
-.tariffs__content-ul {
+ .tariffs__content-ul {
   text-align: left;
   list-style: disc; 
-}
+  margin-left: 40px;
+} 
 
+
+.tariffs__text {
+  max-width: 200px;
+} 
 
 
 /* Стилизация доллара */
@@ -269,6 +289,7 @@ hr {
 .tariffs__cost-mod {
   font-size: 30px;
 }
+
 
 
 /* pagination */
@@ -283,69 +304,71 @@ hr {
   text-decoration: none;
 }
   
-  .pagination__title {
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 14px;
-      color: #7c7b7b;
-      margin-right: 18px;
-  }
-  
-  .pagination__btn {
-      display: inline-block;
-      text-decoration: none;
-      vertical-align: middle;
-      color: #221f1f;
-  }
-  
-  .pagination__btn_prev {
-      margin-right: 9px;
-  }
-  
-  .pagination__btn_next {
-      margin-left: 9px;
-  }
-  
-  .pagination__btn_active {
-      color: #bebdbd;
-  }
-  
-  .pagination__list {
-      display: inline-block;
-      vertical-align: middle;
-  }
-  
-  .pagination__item {
-      display: inline-block;
-      vertical-align: middle;
-  }
-  
-  .pagination__link {
-      text-decoration: none;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      text-align: center;
-      display: block;
-      font-size: 14px;
-      color: #221f1f;
-      transition: .3s;
-  }
-  
-  .pagination__link:hover {
-      color: #ffffff;
-      background-color: #5972b1;
-      border-radius: 3px;
-  }
-  
-  .pagination__item_active .pagination__link {
-      color: #ffffff;
-      background-color: #5972b1;
-      border-radius: 3px;
-  }
+.pagination__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #7c7b7b;
+  margin-right: 18px;
+}
+
+.pagination__btn {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #221f1f;
+}
+
+.pagination__btn_prev {
+  margin-right: 9px;
+}
+
+.pagination__btn_next {
+  margin-left: 9px;
+}
+
+.pagination__btn_active {
+  color: #bebdbd;
+}
+
+.pagination__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pagination__link {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  color: #221f1f;
+  transition: .3s;
+}
+
+.pagination__link:hover {
+  color: #ffffff;
+  background-color: #5972b1;
+  border-radius: 3px;
+}
+
+.pagination__item_active .pagination__link {
+  color: #ffffff;
+  background-color: #5972b1;
+  border-radius: 3px;
+}
 
 
-
+.main {
+  margin-bottom: 60px;
+}
 
 
 /* footer */
@@ -365,7 +388,7 @@ hr {
 
 
 .footer__col_last {
-  padding: 0px 0px 0px 170px;
+  padding: 0px 0px 0px 120px;
 }
 
 .footer__col_mid {
@@ -378,6 +401,9 @@ hr {
   position: relative;
   width: 20px;
   height: 20px;
+  background: #d4ddf2;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .socials__avatar-img {
@@ -387,64 +413,25 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.socials__item:hover {
+  background: white; 
+}
 
 
 .tariffs__content-ul-mod {
   list-style: disc;
 }
 
-.tariffs__item {
-  padding-left: 25px;
-}
 
 
-/* тест иконок соцсетей*/
-/* .socials__link:before {
-  content: "";
-  display: inline-block;
-  margin-right: 13px;
-  width: 23px;
-  height: 18px;
-  background: left center / contain no-repeat;
-}
 
 
-.menu__item--active .socials__link {
-  color: black;
-}
 
-.socials__item--icon--vkontakte .socials__link:before {
-  background-image: url('./img/icons/social/vk.png');
-}
 
-.socials__item--icon--vkontakte .socials__link:hover:before {
-  background-image: url('./img/icons/menu/main-hover.png');
-}
 
-.socials__item--icon--facebook .socials__link:before {
-  background-image: url('./img/icons/menu/feed.png');
-}
 
-.socials__item--icon--facebook .socials__link:hover:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
-}
 
-.socials__item--icon--twitter .socials__link:before {
-  background-image: url('./img/icons/menu/team.png');
-}
 
-.socials__item--icon--vkontakte .socials__link:hover:before {
-  background-image: url('./img/icons/menu/team-hover.png');
-}
 
-.menu__item--active.menu__item--icon--main .socials__link:before {
-  background-image: url('./img/icons/menu/main-hover.png');
-}
 
-.menu__item--active.menu__item--icon--feed .socials__link:before {
-  background-image: url('./img/icons/menu/feed-hover.png');
-}
 
-.menu__item--active.menu__item--icon--team .socials__link:before {
-  background-image: url('./img/icons/menu/team-hover.png');
-} */
